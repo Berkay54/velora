@@ -74,7 +74,7 @@ function App() {
 
         <section className="experience section-pad reveal" id="deneyim"><p className="eyebrow">03 / BİR VELORA ANI</p><h2>Bir menü açılır.<br /><em>Bütün duyular uyanır.</em></h2><p>Mum ışığı, tanıdık bir koku ve keşfedilmeyi bekleyen tatlar.<br />Deneyim, daha ilk sayfada başlar.</p><button className="primary-link" onClick={openFilm}>Dünyamıza adım atın <span aria-hidden="true">↗</span></button></section>
       </main>
-      <footer><a className="wordmark" href="#top">VELORA<span>ATELIER</span></a><span>Özenle hazırlanmış küçük mutluluklar.</span><a href="#top" className="back-top">Başa dön ↑</a><span className="copyright">© {new Date().getFullYear()} Velora Atelier</span></footer>
+      <footer><a className="wordmark" href="#top">VELORA<span>ATELIER</span></a><span>Özenle hazırlanmış küçük mutluluklar.</span><a href="#top" className="back-top">Başa dön ↑</a><span className="copyright">© {new Date().getFullYear()} Velora Atelier · Tasarım: <a href="https://dablabs.net/" target="_blank" rel="noopener">DAB Labs</a></span></footer>
 
       <dialog ref={filmDialog} className="film-dialog" onCancel={closeFilm} onClick={event => { if (event.target === event.currentTarget) closeFilm() }} aria-label="Velora Atelier filmi"><div className="dialog-top"><span>VELORA ATELIER / LE GOÛT</span><button onClick={closeFilm}>Filmi kapat ×</button></div><video ref={fullVideo} src="/media/restaurant-film.mp4" poster="/media/hero-poster.jpg" controls playsInline preload="none" /><p>Her sayfada başka bir hikâye.</p></dialog>
     </>
